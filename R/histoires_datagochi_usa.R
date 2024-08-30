@@ -73,6 +73,22 @@ theme_datagotchi_light <- function(base_size = 11,
   
   # Activer showtext
   showtext::showtext_auto()
+  
+  # Charger les logos
+  logo1_path <- system.file("extdata/clessn.png", package = "clessnize") # Modifier le chemin d'accès
+ # logo2_path <- system.file("images/logo2.png", package = "clessnize") # Modifier le chemin d'accès
+  
+  logo1 <- png::readPNG(logo1_path)
+  logo1_grob <- grid::rasterGrob(logo1, x = unit(0, "npc"), y = unit(1, "npc"), 
+                                 hjust = -0.1, vjust = 1.1, 
+                                 width = unit(1, "inches"), height = unit(1, "inches"))
+  
+  #logo2 <- png::readPNG(logo2_path)
+  #logo2_grob <- grid::rasterGrob(logo2, x = unit(1, "npc"), y = unit(1, "npc"), 
+  #                               hjust = 1.1, vjust = 1.1, 
+  #                               width = unit(1, "inches"), height = unit(1, "inches"))
+  
+  
   # Créer le thème en utilisant la font spécifiée
   ggplot2::theme_classic() +
     ggplot2::theme(
@@ -122,3 +138,9 @@ datagotchi_green_light <- "#1BF640"
 #' @return A character string representing the color code "#26E92E".
 #' @export
 datagotchi_green_dark <- "#26E92E"
+
+
+
+
+
+
