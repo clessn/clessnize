@@ -75,7 +75,7 @@ theme_datagotchi_light <- function(base_size = 11,
   showtext::showtext_auto()
   
   # Charger les logos
-  logo1_path <- system.file("extdata/clessn.png", package = "clessnize") # Modifier le chemin d'accès
+  logo1_path <- system.file("clessnize/inst/extdata/Logo_Partenaire_-51.png", package = "clessnize") 
  # logo2_path <- system.file("images/logo2.png", package = "clessnize") # Modifier le chemin d'accès
   
   logo1 <- png::readPNG(logo1_path)
