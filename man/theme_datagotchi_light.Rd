@@ -56,11 +56,11 @@ is used to ensure that the fonts render correctly.
 }
 \examples{
 \dontrun{
-  library(ggplot2)
-  data <- mtcars
-  ggplot(data, aes(x = mpg, y = wt)) +
-    geom_point() +
-    theme_datagotchi_light()
+library(ggplot2)
+data <- mtcars
+ggplot(data, aes(x = mpg, y = wt)) +
+  geom_point() +
+  theme_datagotchi_light()
 }
 
 }
